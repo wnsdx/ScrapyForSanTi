@@ -62,7 +62,8 @@ class SantiSpider(scrapy.Spider):
         chpcon = ''
         # print('[ChapterName]=', msg)
 
-        ChaptersContent_lv1 = response.css('#nr1>p::text').extract()
+        ChaptersContent_lv1 = response.css('#nr1>p::text,#nr1>p>em::text').extract()
+        # ChaptersContent_lv2 = response.css('#nr1>p>em::text').extract()
         # ChaptersContent_lv2 = ChaptersContent_lv1.css('')
         for content in ChaptersContent_lv1:
             chpcon = chpcon + '\n' + content
