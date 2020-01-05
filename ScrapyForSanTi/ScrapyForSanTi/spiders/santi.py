@@ -4,6 +4,7 @@ import os
 from fake_useragent import UserAgent
 from scrapy.selector import Selector
 from ..items import ScrapyforsantiItem
+# from scrapyMysql.items import ScrapymysqlItem
 
 class SantiSpider(scrapy.Spider):
     name = 'santi'

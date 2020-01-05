@@ -1,8 +1,9 @@
+.env/
 .idea/
 .vscode/
-download/
-.env/
+__pycache__/
 
-*.docx
-*.tmp
+*.txt
 *.html
+*.pyc
+*.docx
